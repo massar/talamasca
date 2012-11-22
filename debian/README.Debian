@@ -1,0 +1,12 @@
+Talamasca for Debian
+--------------------
+
+Website: http://unfix.org/projects/talamasca/
+
+This can be build by using the 'deb' target for make.
+Which calls simply "debian/rules binary" ofcourse ;)
+
+This should run out-of-the-box as user nobody.
+
+Jeroen Massar <jeroen@unfix.org>
+

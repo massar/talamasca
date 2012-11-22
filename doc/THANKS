@@ -1,0 +1,23 @@
+The following people/organisations should be thanked:
+
+BitlBee:
+ Thanks to Wilmer, Maurits and Sjoerd for creating BitlBee thereby giving
+ people the opportunity to communicate with the various IM's from their
+ favourite IRC client.
+ 
+Irssi:
+ For being a great irssi client and mimicking ircii perfectly.
+
+Jabber:
+ For having a working publically available server, allowing me to test
+ Talamasca's BitlBee mode without being a burden on any real IM services.
+
+Hosting/Archiving:
+Thanks to SourceForge for creating such a wonderful development environment.
+ http://sourceforge.net
+
+Re-used code:
+The linklist.[ch] files were taken from the Zebra package, which were written
+and Copyright (C) 1997, 2000 Kunihiro Ishiguro
+ http://www.zebra.org
+

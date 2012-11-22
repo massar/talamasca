@@ -1,0 +1,20 @@
+The code for Talamasca is written by Jeroen Massar <jeroen@unfix.org>
+
+The project started on Sat Oct 2 16:35:42 CET 2004 and it's main CVS
+repository is at the SourceForge development networks, located in the
+United States of America.
+
+The copyright for this package is owned by Jeroen Massar.
+
+This program was created to be able to enable users using
+MSN/ICQ/Yahoo/* to chat on the StarGazers (http://www.stargazers.nl)
+chatbox by introducing users connecting to a BitlBee server
+into the IRC network on which the chat is running.
+
+BitlBee (http://www.bitlbee.org) is a great tool written by
+Wilmer, Maurits and Sjoerd.
+
+(C) 2004 Jeroen Massar <jeroen@unfix.org>
+
+Authors Website:   http://unfix.org/~jeroen/
+Talamasca Website: http://unfix.org/projects/talamasca/

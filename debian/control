@@ -1,0 +1,16 @@
+Source: talamasca
+Section: net
+Priority: optional
+Maintainer: Jeroen Massar <jeroen@unfix.org>
+Build-Depends: debhelper (>> 3.0.0)
+Standards-Version: 3.5.2
+
+Package: talamasca
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Channel linking daemon
+ Talamasca is a networking daemon that connects a channel on one irc
+ server to another network.
+ .
+ Website: http://unfix.org/projects/talamasca/
+

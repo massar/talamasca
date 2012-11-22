@@ -1,0 +1,61 @@
+Ingredients
+~~~~~~~~~~~
+One will need the following ingredients depending on what you want
+to link together:
+ - A host to run Talamasca on.
+ - A real IRC Server where you have a C/N pair on.
+ - Connectivity between those ;)
+
+At least one:
+ - BitlBee account with MSN/ICQ/Jabber/Meanwhile/* accounts.
+and/or a:
+ - I-lines to allow access to IRC as a user.
+
+Configuring the Bee
+~~~~~~~~~~~~~~~~~~~
+Setup a BitlBee server of your own, do not use a public one.
+Then, using a normal IRC client, create an account and add the
+accounts you would like to have linked to an IRC channel.
+
+Then, quite important, configure the following settings:
+8<----------------------------
+auto_reconnect true
+private true
+handle_unknown add
+display_namechanges true
+buddy_sendbuffer true
+query_order fifo
+---------------------------->8
+This will make sure that BitlBee automatically reconnects when
+there is an error in an account, messages will be sent to the
+user, unknown handles are added, so they can then request a
+permanent !add, realname changes are broadcasted and whois updated
+and lastly that BitlBee does some buffering otherwise we might just
+flood one of the accounts, especially with the !help output etc.
+
+Do not forget to type 'save', though the save_on_quit might catch it.
+
+Of course 'typing_notice' should be false...
+Keep the others on their defaults too
+Do not set the html strip option as it will strip the !help output...
+
+More information about BitlBee can be found on http://www.bitlbee.org
+
+Normal IRC Link
+~~~~~~~~~~~~~~~
+Not much to do here, just configure it in Talamasca ;)
+
+Creating a Talamasca Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This is the tricky part as you will need to do linking etc.
+
+Notes
+~~~~~
+* Looplinking in general is a bad idea and totally your fault
+  if it happens.
+
+* Do not add an account of one Talamasca's MSN/ICQ/etc to another
+  Talamasca this will give mayhem as Talamasca does not grab the
+  "### " prefixed messages nor parses them, thus can never say
+  !add or other commands to resolve the issue.
+  Looping them this way is most probably a bad idea anyway.

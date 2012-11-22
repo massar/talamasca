@@ -1,0 +1,72 @@
+Talamasca FAQ
+~~~~~~~~~~~~~
+
+Q: Can I (re)configure Talamasca using MSN or IRC?
+A: You can only configure Talamasca using the 
+   this makes sure that the connecting entity is really the
+   connecting entity and not somebody else. It also makes sure
+   that, in the event, that there are some oddities in the code
+   that one can't accidentally configure it using this method.
+
+Q: Can I give myself or others ops through Talamasca
+A: Even though Talamasca tracks MODE changes it will not send these
+   changes itself on to other servers. Thus you can't.
+
+Q: Is there any music I should listen to so that Talamasca works?
+A: Blutengel, The Gathering, Nine Inch Nails, Opeth, Suicide Commando,
+   Within Temptation and Nightwish seem to help keeping it running.
+
+Q: Can I configure Talamasca to link to another Talamasca
+A: You can, but you should probably not as it might create a loop.
+
+Q: Did you read Anne Rice's Vampire Chronicles?
+A: Take a guess...
+
+Q: I want users to be automatically added when they joined MSN.
+A: Configuring the bitlbee_auto_add flag to true accomplishes this.
+
+Q: Does Talamasca support IPv6?
+A: Of course it does. It is more the question if others do.
+
+Q: This Talamasca is no investigator of the paranormal!
+A: You might want to take a deeper look into IM protocols :)
+
+Q: Why isn't the IM functionality integrated into Talamasca?
+A: Because BitlBee does an excellent job at that already, why
+   would one want to duplicate code anyway?
+
+Q: Why can't I just simply login with a simple password, using
+   this MD5 Hashing is tedious.
+A: Because then your password would go in clear text over the
+   network and everybody could sniff and abuse it.
+
+Q: What is a FAQ?
+A: FAQ -> Frequently Asked Questions
+
+Q: Which License does Talamasca have?
+A: GPL, see the LICENSE file in the documentation directory.
+   This thus means that you have to publish any changes you make
+   and keep all the copyrights in place and removing them is a
+   breach of the GPL licence.
+   Also if you have some patches/changes, please submit them
+   to the author so we can incorporate them in the main tree,
+   forking is so silly and quite useless.
+
+Q: Why do the various info lines mention "GOUDA ZURICH" and not
+   "LONDON AMSTERDAM ROME" like in the original books?
+A: Because my hometowns are Gouda in the Netherlands and
+   Zurich in Switzerland.
+
+Q: What about Copyright?
+A: As mentioned in almost every file included in this package:
+   Talamasca
+   by Jeroen Massar <jeroen@unfix.org>
+   (C) Copyright Jeroen Massar 2004 All Rights Reserved
+   http://unfix.org/projects/talamasca/
+
+Q: Can users directly login to Talamasca using the IRC Client Protocol?
+A: Not at this moment and it is not planned either.
+   You should link Talamasca to a real IRC server when you want this.
+
+Q: My question is not answered in this FAQ!
+A: Then contact the author and ask him.

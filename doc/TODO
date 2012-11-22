@@ -1,0 +1,22 @@
+Following is a list of known TODO items:
+
+Important:
+* Configuration
+  * @oper: !remove <nick> -> ""
+  * @oper: !reconnect -> account off 0; account on 0
+* "Address not verified" in real name? -> Do not allow join
+* much more
+
+Testing:
+* Multiple uplinks etc?
+* Verify interoperability
+* Nick collision handling
+
+IRC:
+* Implement the IRC protocol
+* P10 server-linking support
+* Remote SQUIT handling -> remove all the users on that server
+* NJOIN (RFC2813) support
+
+Extra's:
+* +b/-b -> block/unblock user

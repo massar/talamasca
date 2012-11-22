@@ -1,0 +1,40 @@
+%define    talamasca_version 2004.10.04
+
+Summary:   Channel Linking Daemon
+Name:      talamasca
+Version:   %(version=`echo %{talamasca_version} | sed 's/\.//g'`; echo $version)
+Release:   %{talamasca_version}
+License:   GPL
+Group:     System Environment/Daemons
+URL:       http://unfix.org/projects/talamasca/
+Vendor:    Jeroen Massar
+Source:    http://unfix.org/projects/talamasca/download/talamasca_%{talamasca_version}.tar.gz
+BuildRoot: /var/tmp/%{name}-root
+
+%description
+Talamasca is a networking daemon that connects to one, or more,
+IRC networks as a client, while linking itself to another network
+and mirroring all the joins/parts/topic's/msg's etc to the linked
+network and vice versa.
+
+%prep
+%setup -q -n talamasca
+
+%build
+make
+
+%install
+mkdir -p $RPM_BUILD_ROOT%{_sbindir}
+cp src/talamasca $RPM_BUILD_ROOT%{_sbindir}
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%doc doc/*
+%defattr(-,root,root)
+%{_sbindir}/talamasca
+
+%changelog
+* Mon Oct 4 2004 Jeroen Massar <jeroen@unfix.org> 2004.10.04
+- initial
